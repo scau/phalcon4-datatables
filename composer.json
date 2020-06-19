@@ -1,0 +1,34 @@
+{
+    "name": "codeops/phalcon4-datatables",
+    "description": "DataTables adapter for Phalcon Framework",
+    "keywords": ["Phalcon", "DataTables", "Plugin"],
+    "license": "MIT",
+    "autoload": {
+      "psr-4": {
+        "DataTables\\": "src/"
+      }
+    },
+    "authors": [
+      {
+        "name": "Pavel Makarenko",
+        "email": "cryfall@gmail.com"
+      },
+      {
+        "name": "Stefan Chiriac",
+        "email": "stefan@magnxpyr.com"
+      },
+      {
+        "name": "Smolyaninov Ilya",
+        "email": "qrotux@gmail.com"
+      }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    },
+    "require-dev": {
+      "phalcon/ide-stubs": "*",
+      "fzaninotto/faker": "1.5.*@dev",
+      "kahlan/kahlan": "^3.0"
+    }
+}
