@@ -9,7 +9,6 @@ use Phalcon\Http\Response;
 
 class DataTable extends \Phalcon\Di\Injectable
 {
-
     public $options;
 
     public $params;
@@ -64,7 +63,7 @@ class DataTable extends \Phalcon\Di\Injectable
     {
         if (empty($columns)) {
             $columns = $builder->getColumns();
-            $columns = (is_array($columns)) ? $columns : array_map('trim', explode(',', $columns));
+            $columns = (is_array($columns)) ? $columns : array_map('trim', explode(',', $columns ?? ''));
         }
 
         $adapter = new QueryBuilder($this->options['length']);
@@ -112,5 +111,4 @@ class DataTable extends \Phalcon\Di\Injectable
 
         return $this;
     }
-
 }
